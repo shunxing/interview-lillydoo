@@ -1,10 +1,15 @@
 <template>
   <div class="content">
+    <div>
+      <img v-bind:src="getImageUrl()" />
+    </div>
     <div class="content__pack-selection">
       <Button
         v-for="pack in trialPacks"
         v-bind:key="pack.size"
         :label="pack.size"
+        :selected="selected"
+        v-on:click="selected = pack.size"
       ></Button>
     </div>
   </div>
@@ -17,10 +22,17 @@ import Button from "./Button";
 export default {
   name: "Content",
   components: { Button },
+  methods: {
+    getImageUrl() {
+      return trialPacksJSON.find((pack) => pack.size === this.selected)
+        .imageUrl;
+    },
+  },
   data() {
     console.log(trialPacksJSON);
     return {
       trialPacks: trialPacksJSON,
+      selected: 1,
     };
   },
 };
