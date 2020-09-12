@@ -1,0 +1,52 @@
+[
+  {
+    "size": 1,
+    "weight": "2-5",
+    "imageUrl": "",
+    "description": {
+      "main": "test main description",
+      "details": ["test detail description"]
+    },
+    "included": ["10diapers", "15wetwipes"]
+  },
+  {
+    "size": 2,
+    "weight": "4-8",
+    "imageUrl": "",
+    "description": {
+      "main": "test main description",
+      "details": ["test detail description"]
+    },
+    "included": ["10diapers", "15wetwipes"]
+  },
+  {
+    "size": 3,
+    "weight": "6-10",
+    "imageUrl": "",
+    "description": {
+      "main": "test main description",
+      "details": ["test detail description"]
+    },
+    "included": ["10diapers", "15wetwipes"]
+  },
+  {
+    "size": 4,
+    "weight": "9-14",
+    "imageUrl": "",
+    "description": {
+      "main": "test main description",
+      "details": ["test detail description"]
+    },
+    "included": ["10diapers", "15wetwipes"]
+  },
+  {
+    "size": 5,
+    "weight": "11-16",
+    "imageUrl": "",
+    "description": {
+      "main": "test main description",
+      "details": ["test detail description"]
+    },
+    "included": ["10diapers", "15wetwipes"]
+  }
+]
