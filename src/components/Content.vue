@@ -1,14 +1,15 @@
 <template>
   <div class="content">
     <div>
-      <img v-bind:src="getImageUrl()" />
+      <img v-bind:src="getImageUrl()" class="content__main-image" />
     </div>
     <div class="content__pack-selection">
       <Button
         v-for="pack in trialPacks"
         v-bind:key="pack.size"
         :label="pack.size"
-        :selected="selected"
+        :secondaryLabel="`(${pack.weight} kg)`"
+        :isSelected="selected === pack.size"
         v-on:click="selected = pack.size"
       ></Button>
     </div>
@@ -32,7 +33,7 @@ export default {
     console.log(trialPacksJSON);
     return {
       trialPacks: trialPacksJSON,
-      selected: 1,
+      selected: "1",
     };
   },
 };
@@ -43,6 +44,10 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__main-image {
+    width: 100%;
+  }
 
   &__pack-selection {
     display: flex;

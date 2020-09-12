@@ -1,6 +1,6 @@
 [
   {
-    "size": 1,
+    "size": "1",
     "weight": "2-5",
     "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/trialbox/lillydoo-testpaket-10.jpg",
     "description": {
@@ -10,7 +10,7 @@
     "included": ["10diapers", "15wetwipes"]
   },
   {
-    "size": 2,
+    "size": "2",
     "weight": "4-8",
     "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/trialbox/lillydoo-testpaket-20.jpg",
     "description": {
@@ -20,7 +20,7 @@
     "included": ["10diapers", "15wetwipes"]
   },
   {
-    "size": 3,
+    "size": "3",
     "weight": "6-10",
     "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/trialbox/lillydoo-testpaket-30.jpg",
     "description": {
@@ -30,7 +30,7 @@
     "included": ["10diapers", "15wetwipes"]
   },
   {
-    "size": 4,
+    "size": "4",
     "weight": "9-14",
     "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/trialbox/lillydoo-testpaket-40.jpg",
     "description": {
@@ -40,7 +40,7 @@
     "included": ["10diapers", "15wetwipes"]
   },
   {
-    "size": 5,
+    "size": "5",
     "weight": "11-16",
     "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/trialbox/lillydoo-testpaket-50.jpg",
     "description": {
