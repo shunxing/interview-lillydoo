@@ -37,7 +37,7 @@
       "main": "test main description",
       "details": ["test detail description"]
     },
-    "included": ["10diapers", "15wetwipes"]
+    "included": ["10diapers", "15sensitiveswipes"]
   },
   {
     "size": "5",
@@ -47,6 +47,6 @@
       "main": "test main description",
       "details": ["test detail description"]
     },
-    "included": ["10diapers", "15wetwipes"]
+    "included": ["10diapers", "15sensitiveswipes"]
   }
 ]
