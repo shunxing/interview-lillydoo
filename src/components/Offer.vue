@@ -19,6 +19,7 @@
 .offer {
   display: flex;
   margin: 10px 0;
+  flex: 1;
 
   &__image {
     flex: 1;
@@ -34,18 +35,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 10px;
+    margin-left: 20px;
 
     &__title {
       font-weight: bold;
-    }
-
-    ul {
-      padding-inline-start: 1.3em;
-    }
-
-    li {
-      text-align: left;
     }
   }
 }

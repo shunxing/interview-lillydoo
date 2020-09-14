@@ -29,7 +29,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
+  padding: 10px 5px;
   color: $disabled-color;
   display: flex;
   flex-direction: column;
