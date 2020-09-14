@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Content from "./Content.vue";
+import Content from "./Content/Content";
 export default {
   name: "Main",
   components: { Content },
