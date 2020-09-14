@@ -10,8 +10,8 @@
             v-bind:key="pack.size"
             :label="pack.size"
             :secondaryLabel="`(${pack.weight} kg)`"
-            :isSelected="selected === pack.size"
-            v-on:click="selected = pack.size"
+            :isSelected="selectedPackage === pack.size"
+            @click="selectPackage(pack.size)"
           ></Button>
         </div>
         <div class="content__pack-selection__description">
@@ -72,28 +72,34 @@ import trialPacksJSON from "../data/trial.json";
 import offersJSON from "../data/offers.json";
 import Button from "./Button";
 import Offer from "./Offer";
+import { mapActions } from "vuex";
+import { mapState } from "vuex";
+
+import { SELECT_PACKAGE } from "../store/constants";
 
 export default {
   name: "Content",
   components: { Button, Offer },
   methods: {
     getImageUrl() {
-      return trialPacksJSON.find((pack) => pack.size === this.selected)
+      return trialPacksJSON.find((pack) => pack.size === this.selectedPackage)
         .imageUrl;
     },
     getOffers() {
       const selectedPack = trialPacksJSON.find(
-        (pack) => pack.size === this.selected
+        (pack) => pack.size === this.selectedPackage
       );
       return selectedPack.included.map((included) => offersJSON[included]);
     },
+    ...mapActions({
+      selectPackage: SELECT_PACKAGE,
+    }),
   },
+  computed: mapState({ selectedPackage: (state) => state.selectedPackage }),
   data() {
-    console.log(trialPacksJSON);
     return {
       offers: offersJSON,
       trialPacks: trialPacksJSON,
-      selected: "1",
     };
   },
 };
