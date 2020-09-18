@@ -5,7 +5,6 @@ export const mutations = {
     state.selectedPackage = payload.selectedPackage;
   },
   [FETCH_PACKAGES]: (state, payload) => {
-    console.log(payload.packages);
     state.packages = payload.packages;
   },
 };
