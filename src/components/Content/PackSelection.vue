@@ -5,7 +5,7 @@
       <div>CHOOSE YOUR SIZE</div>
       <div class="pack-selection__form__buttons">
         <Button
-          v-for="pack in trialPacks"
+          v-for="pack in packages"
           v-bind:key="pack.size"
           :label="pack.size"
           :secondaryLabel="`(${pack.weight} kg)`"
@@ -21,22 +21,16 @@
 <script>
 import Button from "../shared/Button";
 import DeliveryInformations from "./DeliveryInformations";
-import trialPacksJSON from "../../data/trial.json";
 import { mapActions } from "vuex";
 import { SELECT_PACKAGE } from "../../store/constants";
 
 export default {
   components: { Button, DeliveryInformations },
-  props: { selectedPackage: String },
+  props: { selectedPackage: String, packages: Array },
   methods: {
     ...mapActions({
       selectPackage: SELECT_PACKAGE,
     }),
-  },
-  data() {
-    return {
-      trialPacks: trialPacksJSON,
-    };
   },
 };
 </script>

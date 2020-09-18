@@ -1,0 +1,33 @@
+{
+  "10diapers": {
+    "title": "10 Lillydoo diapers",
+    "rating": 4,
+    "reviewsNumber": 300,
+    "descriptions": [
+      "0% perfumes & lotions, 100% LILLYDOO protection",
+      "Extra soft and super comfortable",
+      "With our turbo tunnels for an ideal fit and fast absorption"
+    ],
+    "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/lillydoo-little-blowballs-design-preview-tp.png"
+  },
+  "15wetwipes": {
+    "title": "15 wet wipes with 99% water",
+    "rating": 4,
+    "reviewsNumber": 300,
+    "descriptions": [
+      "Naturally pure, extra mild, alternative to \"water & cotton wool\"",
+      "0% perfumes & PEGs, 100% biodegradable"
+    ],
+    "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/products/wipes/water-wipes-15-small.png"
+  },
+  "15sensitiveswipes": {
+    "title": "15 sensitive wet wipes",
+    "rating": 4,
+    "reviewsNumber": 300,
+    "descriptions": [
+      "Extra thick and compostable cloth",
+      "0% perfumes & PEGs, 100% biodegradable"
+    ],
+    "imageUrl": "https://www.lillydoo.com/bundles/lepweb/img/products/wipes/sensitive-wipes-15-small.jpg"
+  }
+}

@@ -8,9 +8,14 @@
 
 <script>
 import Content from "./Content/Content";
+import { FETCH_PACKAGES } from "../store/constants";
 export default {
   name: "Main",
   components: { Content },
+
+  mounted() {
+    this.$store.dispatch(FETCH_PACKAGES);
+  },
 };
 </script>
 

@@ -1,7 +1,10 @@
 <template>
   <div class="content">
-    <PackSelection :selectedPackage="selectedPackage" />
-    <div class="content__main-image"><img v-bind:src="getImageUrl()" /></div>
+    <PackSelection :selectedPackage="selectedPackage" :packages="packages" />
+
+    <div class="content__main-image">
+      <img :src="getImageUrl()" />
+    </div>
     <DeliveryInformations />
   </div>
   <Offers :selectedPackage="selectedPackage" />
@@ -12,18 +15,22 @@ import PackSelection from "./PackSelection";
 import DeliveryInformations from "./DeliveryInformations";
 import Offers from "./Offers";
 import { mapState } from "vuex";
-import trialPacksJSON from "../../data/trial.json";
 
 export default {
   name: "Content",
   components: { PackSelection, DeliveryInformations, Offers },
   methods: {
     getImageUrl() {
-      return trialPacksJSON.find((pack) => pack.size === this.selectedPackage)
-        .imageUrl;
+      const selectedPackage = this.packages.find(
+        (pack) => pack.size === this.selectedPackage
+      );
+      return selectedPackage && selectedPackage.imageUrl;
     },
   },
-  computed: mapState({ selectedPackage: (state) => state.selectedPackage }),
+  computed: mapState({
+    selectedPackage: (state) => state.selectedPackage,
+    packages: (state) => state.packages,
+  }),
 };
 </script>
 

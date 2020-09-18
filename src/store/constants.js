@@ -1,1 +1,2 @@
 export const SELECT_PACKAGE = "SELECT_PACKAGE";
+export const FETCH_PACKAGES = "FETCH_PACKAGES";
