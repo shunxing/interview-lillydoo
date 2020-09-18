@@ -1,13 +1,15 @@
 <template>
-  <div class="content">
-    <PackSelection :selectedPackage="selectedPackage" :packages="packages" />
+  <div class="container">
+    <div class="content">
+      <PackSelection :selectedPackage="selectedPackage" :packages="packages" />
 
-    <div class="content__main-image">
-      <img :src="getImageUrl()" />
+      <div class="content__main-image">
+        <img :src="getImageUrl()" />
+      </div>
+      <DeliveryInformations />
     </div>
-    <DeliveryInformations />
+    <Offers :selectedPackage="selectedPackage" />
   </div>
-  <Offers :selectedPackage="selectedPackage" />
 </template>
 
 <script>
@@ -46,6 +48,18 @@ export default {
 
     img {
       width: 100%;
+
+      @media (min-width: $desktop-viewport) {
+        min-width: 300px;
+        max-width: 500px;
+      }
+    }
+
+    @media (min-width: $desktop-viewport) {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      max-width: initial;
     }
   }
 
@@ -58,6 +72,7 @@ export default {
 
   @media (min-width: $desktop-viewport) {
     flex-direction: row-reverse;
+    align-items: flex-start;
   }
 }
 </style>

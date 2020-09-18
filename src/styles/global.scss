@@ -3,13 +3,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-  margin-top: 60px;
-  padding: 20px;
 
 }
 
-
+body {
+  margin: 0px;
+}
 ul {
   padding-inline-start: 1.3rem;
 }
 
+a.button{
+  width: 100%;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 30px;
+
+  @media (min-width: $desktop-viewport) {
+    padding: 30px 100px
+  }
+}

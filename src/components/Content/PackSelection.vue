@@ -1,8 +1,8 @@
 <template>
-  <div class="pack-selection">
+  <div class="pack-selection" id="packSelection">
     <div class="pack-selection__form">
-      <div>Discover our skin friendliness</div>
-      <div>CHOOSE YOUR SIZE</div>
+      <h2>Discover our skin friendliness</h2>
+      <h5>CHOOSE YOUR SIZE</h5>
       <div class="pack-selection__form__buttons">
         <Button
           v-for="pack in packages"
@@ -40,6 +40,8 @@ export default {
   @media (min-width: $desktop-viewport) {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
+    flex: 1;
   }
   &__form {
     display: flex;
@@ -55,8 +57,9 @@ export default {
 
       .button {
         @media (min-width: $desktop-viewport) {
-          max-width: 200px;
-          min-width: 90px;
+          min-width: initial;
+          flex: 1;
+          text-align: center;
         }
         max-width: 100%;
         min-width: 90px;
