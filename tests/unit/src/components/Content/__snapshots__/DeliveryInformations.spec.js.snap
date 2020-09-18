@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeliveryInformations.vue should render correctly 1`] = `
+VueWrapper {
+  "__app": Object {
+    "_component": Object {
+      "__emits": Object {
+        "0": Object {},
+      },
+      "__props": Object {
+        "0": Array [
+          Object {},
+          Array [],
+        ],
+      },
+      "name": "VTU_ROOT",
+      "render": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+      id="app"
+    >
+      <div
+        class="delivery-informations"
+      >
+        <div>
+           Try our skin-friendly diapers now and get our wet wipes with 99% water for sizes 1 - 3 or the sensitive wet wipes for sizes 4 - 5. 
+        </div>
+        <ul>
+          <li>
+            We pay for the products, you only pay for the shipping.
+          </li>
+          <li>
+             Automatic transition to the diaper subscription, which can be canceled at any time, for € 49.50 per delivery. 
+          </li>
+          <li>
+             Prices include VAT, plus shipping costs if applicable , no customs duties. 
+          </li>
+        </ul>
+      </div>
+    </div>,
+    "_context": Object {
+      "app": [Circular],
+      "components": Object {},
+      "config": Object {
+        "errorHandler": undefined,
+        "globalProperties": Object {},
+        "isCustomElement": [Function],
+        "isNativeTag": [Function],
+        "optionMergeStrategies": Object {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": Object {},
+      "mixins": Array [
+        Object {
+          "__emits": Object {
+            "0": null,
+          },
+          "__props": Object {
+            "0": Array [],
+          },
+          "beforeCreate": [Function],
+        },
+        Object {
+          "__emits": Object {
+            "0": null,
+          },
+          "__props": Object {
+            "0": Array [],
+          },
+          "beforeCreate": [Function],
+        },
+      ],
+      "provides": Object {},
+      "reload": [Function],
+    },
+    "_props": null,
+    "_uid": 0,
+    "component": [Function],
+    "config": Object {
+      "errorHandler": undefined,
+      "globalProperties": Object {},
+      "isCustomElement": [Function],
+      "isNativeTag": [Function],
+      "optionMergeStrategies": Object {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.0.0-rc.10",
+  },
+  "__isFunctionalComponent": false,
+  "__setProps": [Function],
+  "componentVM": Object {
+    "__emitted": Object {},
+  },
+  "rootVM": Object {
+    "__emitted": Object {},
+  },
+}
+`;
