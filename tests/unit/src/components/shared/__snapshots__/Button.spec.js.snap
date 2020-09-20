@@ -23,8 +23,12 @@ VueWrapper {
       <div
         class="button"
       >
-        <span />
-        <span />
+        <span
+          class="button__label"
+        />
+        <span
+          class="button__secondary-label"
+        />
       </div>
     </div>,
     "_context": Object {
@@ -90,7 +94,11 @@ VueWrapper {
     "buttonClass": Object {
       "button": true,
       "button--active": false,
+      "button--inverted": false,
+      "undefined": undefined,
     },
+    "class": undefined,
+    "inverted": false,
     "isSelected": false,
     "label": undefined,
     "secondaryLabel": undefined,
