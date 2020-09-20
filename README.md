@@ -3,7 +3,9 @@
 This project is a task that Lillydoo is asking for the technical interview. 
 
 # RUN THE APP
-Install via `yarn` then serve the frontend build with `yarn serve` and start the data server `yarn server`
+Install via `yarn` and select Vuex 4.0.0-beta
+Then serve the frontend build with `yarn serve` and start the data server `yarn server`
+Access to the app on port `8080`
 
 # Description
 The user is landing on the trial packs page of Lillydoo. 
