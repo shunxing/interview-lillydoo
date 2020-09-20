@@ -1,10 +1,10 @@
 <template>
-  <div class="header header--mobile">
+  <header class="header header--mobile">
     <i class="icon icon--hamburger" />
     <i class="header__logo icon icon--lillydoo" />
     <i class="icon icon--shopping-bag" />
-  </div>
-  <div class="header header--desktop">
+  </header>
+  <header class="header header--desktop">
     <i class="header__logo icon icon--lillydoo" />
     <div class="header__navigation">
       <span class="header__navigation__item header__navigation__item--active"
@@ -14,7 +14,7 @@
       ><span class="header__navigation__item">Magazine</span
       ><span class="header__navigation__item">About Lillydoo</span>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
