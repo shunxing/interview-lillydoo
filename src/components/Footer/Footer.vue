@@ -38,6 +38,11 @@
   flex-direction: column;
   padding: 10px;
   background-color: $background-grey-color;
+
+  @media (min-width: $desktop-viewport) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
   &__navigation {
     &__item {
       display: block;
@@ -45,8 +50,8 @@
   }
   &__payment {
     &__item {
-      height: 30px;
-      width: 50px;
+      height: 40px;
+      width: 60px;
     }
   }
 
