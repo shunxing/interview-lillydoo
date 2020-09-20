@@ -17,3 +17,8 @@
     </ul>
   </div>
 </template>
+<style lang="scss" scoped>
+.delivery-informations {
+  margin: 20px 0;
+}
+</style>

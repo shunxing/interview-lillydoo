@@ -11,7 +11,7 @@
       </div>
       <div class="review__description">
         <div class="review__description__details">
-          {{ review.description }}
+          "{{ review.description }}"
         </div>
         <small class="review__person">
           <span class="review__person__name"> {{ review.name }} </span> -
@@ -47,20 +47,28 @@ export default {
 .review {
   display: flex;
   align-items: center;
+
   margin: 20px 0;
+  @media (min-width: $desktop-viewport) {
+    justify-content: center;
+  }
 
   &__image {
     margin-right: 20px;
-    flex: 1;
+    max-width: 100px;
     img {
       width: 100%;
     }
   }
 
   &__description {
-    flex: 6;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
+
+    &__details {
+      margin: 10px 0;
+    }
   }
 
   &__person {

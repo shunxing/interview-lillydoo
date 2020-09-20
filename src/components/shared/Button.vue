@@ -1,19 +1,27 @@
 <template>
   <div v-bind:class="buttonClass">
-    <span>{{ label }}</span
-    ><span>{{ secondaryLabel }}</span>
+    <span class="button__label">{{ label }}</span
+    ><span class="button__secondary-label">{{ secondaryLabel }}</span>
   </div>
 </template>
 
 <script>
 export default {
   name: "Button",
-  props: { label: String, isSelected: Boolean, secondaryLabel: String },
+  props: {
+    label: String,
+    isSelected: Boolean,
+    inverted: Boolean,
+    secondaryLabel: String,
+    class: String,
+  },
   computed: {
     buttonClass: function () {
       return {
         button: true,
         ["button--active"]: this.isSelected,
+        ["button--inverted"]: this.inverted,
+        [this.class]: this.class,
       };
     },
   },
@@ -35,7 +43,8 @@ export default {
   flex-direction: column;
   align-items: center;
 
-  &--active {
+  &--active,
+  &--inverted {
     background: #00afab;
     color: white;
     border-color: transparent;

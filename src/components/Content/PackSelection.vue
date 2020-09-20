@@ -14,6 +14,7 @@
         ></Button>
       </div>
       <DeliveryInformations :viewport="'desktop'" />
+      <Button label="Add to cart" class="pack-selection__add" inverted />
     </div>
   </div>
 </template>
@@ -43,6 +44,20 @@ export default {
     justify-content: center;
     flex: 1;
   }
+  &__add {
+    display: none;
+
+    @media (min-width: $desktop-viewport) {
+      display: block;
+      max-width: initial;
+
+      width: 80%;
+      margin: 0 10% 20px 10%;
+      text-align: center;
+      display: flex;
+    }
+  }
+
   &__form {
     display: flex;
     flex-direction: column;
@@ -52,6 +67,8 @@ export default {
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
       @media (min-width: $desktop-viewport) {
+        font-size: 0.6rem;
+
         display: flex;
       }
 
@@ -60,7 +77,7 @@ export default {
           min-width: initial;
           flex: 1;
           text-align: center;
-          min-width: 90px;
+          min-width: initial;
         }
         max-width: 100%;
         min-width: 80px;

@@ -7,6 +7,7 @@
         <img :src="getImageUrl()" />
       </div>
       <DeliveryInformations />
+      <Button label="Add to cart" inverted class="content__add-package" />
     </div>
     <div content="secondary-content">
       <div class="content__process">
@@ -25,11 +26,12 @@ import PackSelection from "./PackSelection";
 import DeliveryInformations from "./DeliveryInformations";
 import Reviews from "./Reviews";
 import Offers from "./Offers";
+import Button from "../shared/Button";
 import { mapState } from "vuex";
 
 export default {
   name: "Content",
-  components: { PackSelection, DeliveryInformations, Offers, Reviews },
+  components: { PackSelection, DeliveryInformations, Offers, Reviews, Button },
   methods: {
     getImageUrl() {
       const selectedPackage = this.packages.find(
@@ -56,7 +58,15 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  &__add-package {
+    width: 100%;
+    max-width: initial;
+    margin-bottom: 20px;
 
+    @media (min-width: $desktop-viewport) {
+      display: none;
+    }
+  }
   &__process {
     text-align: center;
     width: 100vw;
@@ -68,7 +78,7 @@ export default {
     @media (min-width: $desktop-viewport) {
       margin-left: -100px;
       max-width: initial;
-      padding: 0;
+      padding: 20px 0;
     }
 
     &--desktop {
@@ -76,6 +86,7 @@ export default {
       display: none;
       @media (min-width: $desktop-viewport) {
         display: block;
+        transform: scale(0.8);
       }
     }
 

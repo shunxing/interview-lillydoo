@@ -1,9 +1,8 @@
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "CeraPro";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-
+  font-size: 0.8rem;
 }
 
 body {
@@ -27,4 +26,9 @@ a.button{
   @media (min-width: $desktop-viewport) {
     padding: 30px 100px
   }
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("assets/fonts/CeraPRO-Regular.woff2") format("woff2");
 }

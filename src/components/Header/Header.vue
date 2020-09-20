@@ -29,6 +29,7 @@ export default {};
   align-items: center;
   flex-wrap: nowrap;
   padding: 0 5%;
+  text-transform: uppercase;
 
   &__navigation {
     &__item {

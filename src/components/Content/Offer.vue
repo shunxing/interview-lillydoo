@@ -3,9 +3,7 @@
     <div class="offer__image"><img v-bind:src="offer.imageUrl" /></div>
     <div class="offer__description">
       <div class="offer__description__title">{{ offer.title }}</div>
-      <div class="offer__description__reviews">
-        {{ offer.rating }} ({{ offer.reviewsNumber }})
-      </div>
+      <div class="offer__description__reviews"></div>
       <ul>
         <li v-for="description in offer.descriptions" v-bind:key="description">
           {{ description }}

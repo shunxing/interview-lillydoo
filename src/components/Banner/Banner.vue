@@ -36,6 +36,7 @@
     &__button.button {
       padding: 10px 60px;
       width: initial;
+      text-transform: uppercase;
     }
   }
 
