@@ -2,7 +2,7 @@ describe("Trial package selection page", () => {
   beforeEach(() => {
     cy.visit("/");
   });
-  it("Screenshot", () => {
+  it("Screenshot with applitools", () => {
     cy.eyesOpen({
       appName: "Lillydoo!",
       testName: "Lillydoo - package selection",
