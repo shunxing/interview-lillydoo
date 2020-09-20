@@ -2,6 +2,9 @@
 
 This project is a task that Lillydoo is asking for the technical interview. 
 
+# RUN THE APP
+Install via `yarn` then serve the frontend build with `yarn serve` and start the data server `yarn server`
+
 # Description
 The user is landing on the trial packs page of Lillydoo. 
 The user can select one trial pack. The options are differing from the size the user can choose and what the package is including.
@@ -34,6 +37,7 @@ In the unit testing, I'm not covering all the features. This bit of testing is t
 ## e2e testing
 Cypress is used to do e2e-testing. 
 The only scenario that is going to be tested is the update of the images as it's one of the only interactions possible with the page.
+
 
 
 # Commands
