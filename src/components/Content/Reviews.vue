@@ -58,15 +58,14 @@ export default {
   }
 
   &__description {
-    flex: 3;
+    flex: 6;
     display: flex;
     flex-direction: column;
   }
 
   &__person {
-    &__name {
-      font-weight: bold;
-    }
+    font-weight: bold;
+
     &__job {
       color: $primary-color;
     }

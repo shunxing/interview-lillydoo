@@ -26,8 +26,16 @@
     text-align: center;
     padding: 0 30px;
 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
     &__button.button {
       padding: 10px 60px;
+      width: initial;
     }
   }
 
@@ -40,16 +48,9 @@
     &__introduction {
       height: initial;
       padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      max-width: 300px;
-
+      max-width: 400px;
       margin-right: 20px;
 
-      &__button.button {
-        width: initial;
-      }
       h1 {
         margin-top: 0;
       }
