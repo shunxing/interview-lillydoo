@@ -60,9 +60,10 @@ export default {
           min-width: initial;
           flex: 1;
           text-align: center;
+          min-width: 90px;
         }
         max-width: 100%;
-        min-width: 90px;
+        min-width: 80px;
         margin: 5px;
       }
     }

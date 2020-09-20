@@ -22,7 +22,7 @@ a.button{
 }
 
 .container {
-  padding: 30px;
+  padding: $container-padding;
 
   @media (min-width: $desktop-viewport) {
     padding: 30px 100px

@@ -11,7 +11,7 @@
 <style lang="scss">
 .banner {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   background-image: url("https://www.lillydoo.com/bundles/lepweb/img/header/trialbox/header-trialbox-mobile.jpg");
   background-size: cover;
   background-position: center;
