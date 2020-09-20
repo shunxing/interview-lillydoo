@@ -24,10 +24,16 @@ From size 4 to 5, the user will receive a pack containing:
 - Unit testing: jest@24.9
 - e2e testing : cypress@3.8
 
+## Unit testing
+Jest is used to do the unit testing, I actually put all the test in `tests/unit` and create the same directory tree in the `src` directory. The other solution would have been to create, beside every file of `src/`, a test file `*.test.Vue` (it can be discussed during the review).
 
+In the unit testing, I'm not covering all the features. This bit of testing is to show how Jest should get involved in a VueJS application development. Therefore, you will find  unit tests concerning :
+- some components (`DeliveryInformations` and `shared/Button`)
+- Vuex testing (actions and state mutations)
 
-
-
+## e2e testing
+Cypress is used to do e2e-testing. 
+The only scenario that is going to be tested is the update of the images as it's one of the only interactions possible with the page.
 
 
 # Commands
